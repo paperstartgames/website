@@ -207,7 +207,7 @@ h5 {
 
 .box-header.is-fixed {
     position: fixed;
-    top: -80px;
+    top: -110px;
     background-color: rgba(255, 255, 255, 0.96);
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
