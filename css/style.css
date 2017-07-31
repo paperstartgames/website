@@ -230,6 +230,11 @@ h5 {
     padding: 20px;
 }
 
+.box-logo h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
 .box-primary-nav-trigger {
     position: absolute;
     right: 0;

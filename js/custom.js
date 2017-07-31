@@ -39,6 +39,10 @@ $(window).load(function () {
         }, scroll_top_duration);
     });
 
+    $('img[alt="Logo"]').hover( function() {
+        $( "#logo_text" ).toggle("fast");
+    });
+
     // back to top
     var offset = 300,
         offset_opacity = 1200,
