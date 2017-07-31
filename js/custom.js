@@ -29,6 +29,16 @@ $(window).load(function () {
         return false;
     });
 
+    var scroll_portfolio_duration = 700,
+        $to_portfolio = $('.mouse');
+
+    $to_portfolio.on('click', function (event) {
+        event.preventDefault();
+        $('body,html').animate({
+            scrollTop: 550,
+        }, scroll_top_duration);
+    });
+
     // back to top
     var offset = 300,
         offset_opacity = 1200,
