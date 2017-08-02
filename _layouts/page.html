@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="top-bar">
+  <h1>{{ page.title }}</h1>
+  {% assign crumbs = page.breadcrumb | split: " " %}
+  {% assign crumb_url = "/" %}
+  <p><a href="/">Home</a> /{% for crumb in crumbs %}{% assign crumb_url = crumb_url | append: crumb | append: "/" %} <a href="{{ crumb_url }}">{{ crumb }}</a> /{% endfor %} {{ page.title }}</p>
+</div>
+
+{{ content }}
