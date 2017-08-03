@@ -4,6 +4,7 @@ Static website created using Jekyll
 
 To start the Jekyll Website:
 
+  * Clone the project: `git clone https://github.com/paperstartgames/website.git`
   * Install the latest vesion of Ruby: [Ruby Website](https://www.ruby-lang.org/en/downloads/)
   * Install the Jekyll Gem with: `gem install jekyll`
   * Finally, go into the jekyll project folder and start the app via: `jekyll s`
