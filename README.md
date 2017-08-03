@@ -1,6 +1,6 @@
 # Paperstart Games Website
 
-Static website created using Jekyll
+Static website created using Jekyll - [Paperstart Jekyll Project](https://github.com/paperstartgames/website)
 
 To start the Jekyll Website:
 
