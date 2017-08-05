@@ -11,10 +11,9 @@
 <!-- jQuery -->
 {% js jquery-2.1.1 %}
 <!--  plugins -->
-{% js bootstrap.min.js %}
-{% js menu %}
-{% js animated-headline %}
-{% js isotope.pkgd.min %}
-
-<!--  custom script -->
-{% js custom %}
+<script async src="{% asset_path modernizr.js %}"></script>
+<script async src="{% asset_path bootstrap.min.js %}"></script>
+<script async src="{% asset_path menu.js %}"></script>
+<script async src="{% asset_path animated-headline.js %}"></script>
+<script async src="{% asset_path isotope.pkgd.min.js %}"></script>
+<script async src="{% asset_path custom.js %}"></script>
