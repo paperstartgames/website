@@ -11,7 +11,7 @@ To start the Jekyll Website:
 
 To deploy:
 
-  * Create the website: `jekyll s -H www.paperstartgames.com -P 80`
+  * Create the website: `jekyll build`
   * Copy the contents of _site folder where it should be deployed
 
 ## Credits
