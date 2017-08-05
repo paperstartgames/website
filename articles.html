@@ -29,7 +29,7 @@ permalink: /articles/
               {% assign post_count = post_count | plus:1 %}
                 <div class="col-md-3 col-sm-6 {% for category in post.categories %} {{ category }} {% endfor %}">
                   <a href="{{ post.url }}" class="portfolio_item">
-                    <img src="/img/showcase/{{ post.image }}" alt="image" class="img-responsive" />
+                    <img src="{% asset_path showcase/'{{ post.image }}' %}" alt="image" class="img-responsive" />
                     <div class="portfolio_item_hover">
                       <div class="portfolio-border clearfix">
                         <div class="item_info">

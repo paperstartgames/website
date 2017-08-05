@@ -8,11 +8,11 @@
 
 /* Table of Content
 ==================================================
-	- Google fonts & font family -
-	- General -
+  - Google fonts & font family -
+  - General -
     - typography -
     - Preloader -
-	- Header -
+  - Header -
     - box intro section -
     - Portfoilo section -
     - Footer -
@@ -899,8 +899,8 @@ footer img {
 .top-bar {
     color: #333;
     padding: 150px 0 150px;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
-    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(asset_path("01.jpg"));
+    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(asset_path("01.jpg"));
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;

@@ -23,3 +23,14 @@ sass:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-assets
+
+assets:
+  prefix: "/assets"
+  sources:
+    - _assets/css
+    - _assets/img
+    - _assets/js
+  compress:
+    css:  sass
+    js:   uglifier
