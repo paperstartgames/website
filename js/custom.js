@@ -39,9 +39,11 @@ $(window).load(function () {
         }, scroll_top_duration);
     });
 
-    $('img[alt="Logo"]').hover( function() {
-        $( "#logo_text" ).toggle("fast");
-    });
+    if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+        $('img[alt="Logo"]').hover( function() {
+            $( "#logo_text" ).toggle("fast");
+        });
+    }
 
     // back to top
     var offset = 300,
