@@ -9,6 +9,11 @@ To start the Jekyll Website:
   * Install the Jekyll Gem with: `gem install jekyll`
   * Finally, go into the jekyll project folder and start the app via: `jekyll s`
 
+To deploy:
+
+  * Create the website: `jekyll s -H www.paperstartgames.com -P 80`
+  * Copy the contents of _site folder where it should be deployed
+
 ## Credits
 
   * HTML Template Author: [Ahmed Essa](http://ahmedessa.net/)
