@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 gem 'jekyll'
 
+# Jekyll plugins
 gem 'jekyll-sitemap'
 gem 'jekyll-assets'
 
-gem 'uglifier'      # And we want our javascripts to be minified with UglifyJS
+# Gems to compact CSS and JS
+gem 'uglifier'      
 gem 'sass'

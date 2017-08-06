@@ -21,7 +21,7 @@ layout: page
   <div class="col-md-3">
     <ul class="cat-ul">
       {% for category in page.categories %}
-        <li><i class="ion-ios-circle-filled"></i>{{ category }}</li>
+        <li><i class="ion-ios-circle-filled"></i>{{ category | capitalize }}</li>
       {% endfor %}
     </ul>
     <div class="h-10"></div>
