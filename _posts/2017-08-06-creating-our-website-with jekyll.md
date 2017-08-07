@@ -87,9 +87,11 @@ This is where you will write your articles/posts. The files that will be stored 
 
 **_site**
 
-This folder is created when **jekyll s** is executed. This folder is where your website was generated statically
+This folder is created when **jekyll s** is executed. This folder is where your website will always be generated statically.
 
 ---
+
+Given that now, you know how Jekyll is organized. It is time to find patterns in the static HTML files from your website and turn it into a layout.
 
 #### Finding patterns
 
