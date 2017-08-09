@@ -17,9 +17,6 @@ youtube_url: https://www.youtube.com/channel/UCBatzH4UKdYjQj9fBLEdf8A
 # Build settings
 markdown: kramdown
 permalink: /:title/
-sass:
-  sass_dir: _sass
-  style: compressed
 
 plugins:
   - jekyll-sitemap
