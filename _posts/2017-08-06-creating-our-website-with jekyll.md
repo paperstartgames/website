@@ -58,7 +58,7 @@ The website will be served at the url: <a href="http://127.0.0.1:4000" target="_
 
 #### Understanding Jekyll folders
 
-If you access <a href="https://github.com/paperstartgames/website" target="_blank">Paperstart Games github repository</a>, you will notice that the project contains much more folders than just _posts, which is generated initially. Right now, I will explain what each one of them is responsible for.
+If you access <a href="https://github.com/paperstartgames/website" target="_blank">Paperstart Games github repository</a>, you will notice that the project contains much more folders than just **_posts**, which is generated initially. Right now, I will explain what each one of them is responsible for.
 
 ---
 **_assets**
@@ -75,7 +75,7 @@ This folder is used to store the HTML templates that will be used majorly throug
 
 **_includes**
 
-This folder is used to organize parts of HTML code. Instead of writing everything into the layout file, you can split in into minor include files and make the layout file in the end, easier to be read.
+This folder is used to organize parts of HTML code. Instead of writing everything into the layout file, you can split it into minor include files and make the layout file easier to be read.
 
 ---
 
@@ -87,7 +87,7 @@ This is where you will write your articles/posts. The files that will be stored 
 
 **_site**
 
-This folder is created when **jekyll s** is executed. This folder is where your website will always be generated statically.
+This folder is created when `jekyll s` is executed. This folder is where your website will always be generated statically.
 
 ---
 
@@ -95,9 +95,10 @@ Given that now, you know how Jekyll is organized. It's time to find patterns in 
 
 #### Finding patterns for Layouts
 
-Begin looking for repeating patterns in every static HTML page, because every pattern found, can be reutilized. Everytime one layout is created, all HTML put inside can be used over and over again (just like copy and paste), but the part &#123;{ content }&#125; will enable us to put more HTML layouts in there or markdown content. The following image will help you understand it better:
+Begin looking for repeating patterns in every static HTML page, because every pattern found, can be reutilized. Everytime one layout is created, all HTML put inside can be used over and over again (just like copy and paste), but the part &#123;{ content }&#125; will allow us to put more HTML layouts in there or markdown content. The following image will help to understand it better:
 
-img: http://jekyllrb.com/tutorials/convert-site-to-jekyll/
+![]({% asset_path article/jekylllayoutconcept.png %})
+image from: <a href="http://jekyllrb.com/tutorials/convert-site-to-jekyll/" target="_blank">http://jekyllrb.com/tutorials/convert-site-to-jekyll/</a>
 
 As result, it was possible to divide Paperstart Website as three different layouts:
 
@@ -284,7 +285,7 @@ gem 'uglifier'
 gem 'sass'
 ```
 
-Keep in mind that `Gemfile` is a file for the command `bundle install`, which uses the bundle gem and installs eveything that's inside it. After executing it, add to _config.yml, to begin compressing static files:
+Keep in mind that `Gemfile` is a file for the command `bundle install`, which uses the bundle gem and installs eveything that's inside it. After executing it, add to **_config.yml**, to begin compressing static files:
 
 ```bash
 plugins:
@@ -313,4 +314,24 @@ That's the moment where we insert all our static files into these three folders 
 
 ---
 
-And that's all you need to know to understand whole Jekyll website projects and start your own!
+And that's all you need to know to understand how whole Jekyll websites are generated and start your own! But it's not over yet! After you finished creating your own website with Jekyll, you can serve it for everyone to see using Github-Pages.<br><br>
+
+#### Serving Jekyll with Github-Pages
+
+First of all, create an account at <a href="https://github.com/" target="_blank">Github</a> and create a new repository with the name: username.github.io.
+
+![]({% asset_path article/jekyll_github_create.png %})
+
+After you created it, copy the remote repository URL (which is going to be: https://github.com/username/username.github.io.git), enter inside **_site** folder and use the following commands to push everything into the new repository and serve it to the public!
+
+```bash
+git init
+git add .
+git commit -m "Serving my first Jekyll generated Website!"
+git remote add origin https://github.com/username/username.github.io.git
+git push origin master
+```
+
+After doing this, you can visit your new website by accessing: username.github.io.
+
+Now you have it! Your first new static website generated via Jekyll! Thank you very much for the company and I would like to hear what you think about this tutorial. Suggestions are always welcome!
