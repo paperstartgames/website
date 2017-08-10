@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating our Website with Jekyll"
-date:   2017-08-06 17:00:00 -0300
+date:   2017-08-09 23:00:00 -0300
 image:  jekyll_github.png
 author: "Rodrigo Long Chen Kashiwakura"
 breadcrumb: articles
