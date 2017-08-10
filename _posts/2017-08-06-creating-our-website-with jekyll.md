@@ -97,7 +97,7 @@ Given that now, you know how Jekyll is organized. It's time to find patterns in 
 
 Begin looking for repeating patterns in every static HTML page, because every pattern found, can be reutilized. Everytime one layout is created, all HTML put inside can be used over and over again (just like copy and paste), but the part &#123;{ content }&#125; will allow us to put more HTML layouts in there or markdown content. The following image will help to understand it better:
 
-![]({% asset_path article/jekylllayoutconcept.png %})
+<img src="{% asset_path article/jekylllayoutconcept.png %}" alt="" class="img-responsive" />
 image from: <a href="http://jekyllrb.com/tutorials/convert-site-to-jekyll/" target="_blank">http://jekyllrb.com/tutorials/convert-site-to-jekyll/</a>
 
 As result, it was possible to divide Paperstart Website as three different layouts:
@@ -108,7 +108,7 @@ As result, it was possible to divide Paperstart Website as three different layou
 
 This layout contains everything that is repeated in every page, which is the header containing Paperstart Games icon and MENU. Also the footer, which always shows the company's copyright. The CSS and JS are also inserted here, since every page uses the same static files.
 
-![]({% asset_path article/default_jekyll.png %})
+<img src="{% asset_path article/default_jekyll.png %}" alt="" class="img-responsive" />
 
 ---
 
@@ -116,7 +116,7 @@ This layout contains everything that is repeated in every page, which is the hea
 
 This layout contains the title and breadcrumb of the page, which can be found almost everywhere with exception from the homepage.
 
-![]({% asset_path article/page_jekyll.png %})
+<img src="{% asset_path article/page_jekyll.png %}" alt="" class="img-responsive" />
 
 ---
 
@@ -124,7 +124,7 @@ This layout contains the title and breadcrumb of the page, which can be found al
 
 Finally, this is the layout used by every post, which contains a reserved space for the posts title and to the right, links to social media and categories.
 
-![]({% asset_path article/post_jekyll.png %})
+<img src="{% asset_path article/post_jekyll.png %}" alt="" class="img-responsive" />
 
 ---
 
@@ -320,7 +320,7 @@ And that's all you need to know to understand how whole Jekyll websites are gene
 
 First of all, create an account at <a href="https://github.com/" target="_blank">Github</a> and create a new repository with the name: username.github.io.
 
-![]({% asset_path article/jekyll_github_create.png %})
+<img src="{% asset_path article/jekyll_github_create.png %}" alt="" class="img-responsive" />
 
 After you created it, copy the remote repository URL (which is going to be: https://github.com/username/username.github.io.git), enter inside **_site** folder and use the following commands to push everything into the new repository and serve it to the public!
 
