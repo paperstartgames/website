@@ -15,6 +15,7 @@ twitter_url: https://twitter.com/PaperstartGames
 youtube_url: https://www.youtube.com/channel/UCBatzH4UKdYjQj9fBLEdf8A
 
 # Build settings
+destination:  ./docs
 markdown: kramdown
 permalink: /:title/
 
