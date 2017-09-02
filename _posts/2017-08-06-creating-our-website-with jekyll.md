@@ -11,7 +11,6 @@ categories: programming
 ---
 **RESOURCES**
 
-Website github-page: <a href="https://github.com/paperstartgames/paperstartgames.github.io" target="_blank">link</a><br>
 Website github: <a href="https://github.com/paperstartgames/website" target="_blank">link</a>
 
 ---
@@ -87,7 +86,7 @@ This is where you will write your articles/posts. The files that will be stored 
 
 **_site**
 
-This folder is created when `jekyll s` is executed. This folder is where your website will always be generated statically.
+This folder is created when `jekyll s` is executed. This folder is where your website will always be generated statically by default.
 
 ---
 
@@ -318,11 +317,18 @@ And that's all you need to know to understand how whole Jekyll websites are gene
 
 #### Serving Jekyll with Github-Pages
 
-First of all, create an account at <a href="https://github.com/" target="_blank">Github</a> and create a new repository with the name: username.github.io.
+First of all, create an account at <a href="https://github.com/" target="_blank">Github</a> and create a new repository.
 
 <img src="{% asset_path article/jekyll_github_create.png %}" alt="" class="img-responsive" />
 
-After you created it, copy the remote repository URL, enter inside **_site** folder and use the following commands to push everything into the new repository and serve it to the public!
+Now, it is important to change the folder where the website is generated to the folder **docs**, because since August 2016, Github started letting users serve their websites from this folder. So, in order to do that, add the following configuration to your **_config.yml** file:
+
+```bash
+destination:  ./docs
+```
+
+This configuration will make your jekyll website be generated inside **docs** folder instead of **_site**. Now, with everything created, enter your jekyll project directory and push it into Github by executing for the first time:
+
 
 ```bash
 git init
@@ -332,6 +338,10 @@ git remote add origin REMOTE_REPOSITORY_URL
 git push origin master
 ```
 
-After doing this, you can visit your new website by accessing: username.github.io.
+With **docs** folder inside the master branch, it is now possible to visit the settings in the repository page to change Github Pages Source from None to master branch /docs folder, as the following image shows.<br>
+
+<img src="{% asset_path article/jekyll_github_pages.png %}" alt="" class="img-responsive" />
+
+After doing this, you can visit your new website by accessing: `username.github.io/repository_name`
 
 Now you have it! Your first new static website generated via Jekyll! Thank you very much for the company and I would like to hear what you think about this tutorial. Suggestions are always welcome!

@@ -5,8 +5,8 @@
     <description>Paperstart Games Website created by Rodrigo Long Chen Kashiwakura</description>
     <link>https://www.paperstartgames.com/</link>
     <atom:link href="https://www.paperstartgames.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Sep 2017 13:14:26 -0300</pubDate>
-    <lastBuildDate>Sat, 02 Sep 2017 13:14:26 -0300</lastBuildDate>
+    <pubDate>Sat, 02 Sep 2017 20:58:21 -0300</pubDate>
+    <lastBuildDate>Sat, 02 Sep 2017 20:58:21 -0300</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -14,8 +14,7 @@
         <description>&lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;RESOURCES&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Website github-page: &lt;a href=&quot;https://github.com/paperstartgames/paperstartgames.github.io&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;&lt;br /&gt;
-Website github: &lt;a href=&quot;https://github.com/paperstartgames/website&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Website github: &lt;a href=&quot;https://github.com/paperstartgames/website&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -90,7 +89,7 @@ gem install bundler
 
 &lt;p&gt;&lt;strong&gt;_site&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;This folder is created when &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll s&lt;/code&gt; is executed. This folder is where your website will always be generated statically.&lt;/p&gt;
+&lt;p&gt;This folder is created when &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll s&lt;/code&gt; is executed. This folder is where your website will always be generated statically by default.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -323,11 +322,17 @@ assets:
 
 &lt;h4 id=&quot;serving-jekyll-with-github-pages&quot;&gt;Serving Jekyll with Github-Pages&lt;/h4&gt;
 
-&lt;p&gt;First of all, create an account at &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt; and create a new repository with the name: username.github.io.&lt;/p&gt;
+&lt;p&gt;First of all, create an account at &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt; and create a new repository.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/article/jekyll_github_create.png&quot; alt=&quot;&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;After you created it, copy the remote repository URL, enter inside &lt;strong&gt;_site&lt;/strong&gt; folder and use the following commands to push everything into the new repository and serve it to the public!&lt;/p&gt;
+&lt;p&gt;Now, it is important to change the folder where the website is generated to the folder &lt;strong&gt;docs&lt;/strong&gt;, because since August 2016, Github started letting users serve their websites from this folder. So, in order to do that, add the following configuration to your &lt;strong&gt;_config.yml&lt;/strong&gt; file:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;destination:  ./docs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This configuration will make your jekyll website be generated inside &lt;strong&gt;docs&lt;/strong&gt; folder instead of &lt;strong&gt;_site&lt;/strong&gt;. Now, with everything created, enter your jekyll project directory and push it into Github by executing for the first time:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
 git add .
@@ -337,7 +342,11 @@ git push origin master
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;After doing this, you can visit your new website by accessing: username.github.io.&lt;/p&gt;
+&lt;p&gt;With &lt;strong&gt;docs&lt;/strong&gt; folder inside the master branch, it is now possible to visit the settings in the repository page to change Github Pages Source from None to master branch /docs folder, as the following image shows.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/article/jekyll_github_pages.png&quot; alt=&quot;&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After doing this, you can visit your new website by accessing: &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io/repository_name&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Now you have it! Your first new static website generated via Jekyll! Thank you very much for the company and I would like to hear what you think about this tutorial. Suggestions are always welcome!&lt;/p&gt;
 </description>
