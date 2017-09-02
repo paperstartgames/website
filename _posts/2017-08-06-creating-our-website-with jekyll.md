@@ -11,8 +11,8 @@ categories: programming
 ---
 **RESOURCES**
 
-Website github-page: <a href="https://github.com/paperstartgames/paperstartgames.github.io" target="_blank">https://github.com/paperstartgames/paperstartgames.github.io</a><br>
-Website github: <a href="https://github.com/paperstartgames/website" target="_blank">https://github.com/paperstartgames/website</a>
+Website github-page: <a href="https://github.com/paperstartgames/paperstartgames.github.io" target="_blank">link</a><br>
+Website github: <a href="https://github.com/paperstartgames/website" target="_blank">link</a>
 
 ---
 
@@ -322,13 +322,13 @@ First of all, create an account at <a href="https://github.com/" target="_blank"
 
 <img src="{% asset_path article/jekyll_github_create.png %}" alt="" class="img-responsive" />
 
-After you created it, copy the remote repository URL (which is going to be: https://github.com/username/username.github.io.git), enter inside **_site** folder and use the following commands to push everything into the new repository and serve it to the public!
+After you created it, copy the remote repository URL, enter inside **_site** folder and use the following commands to push everything into the new repository and serve it to the public!
 
 ```bash
 git init
 git add .
 git commit -m "Serving my first Jekyll generated Website!"
-git remote add origin https://github.com/username/username.github.io.git
+git remote add origin REMOTE_REPOSITORY_URL
 git push origin master
 ```
 
