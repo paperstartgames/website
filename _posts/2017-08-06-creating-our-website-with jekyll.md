@@ -6,6 +6,7 @@ image:  jekyll_github.png
 author: "Rodrigo Long Chen Kashiwakura"
 breadcrumb: articles
 categories: programming
+comments: true
 ---
 
 ---

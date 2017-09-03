@@ -6,6 +6,7 @@ image:  lancer_spree.png
 author: "Rodrigo Long Chen Kashiwakura"
 breadcrumb: articles
 categories: game news
+comments: true
 ---
 
 Lancer Spree is the first game beign created by Paperstart Games. In order to be able to deliver it, we will set simple goals. First of all, the game will be very similar to the existing infinite runners genre, but since we want a little bit more of challenge, we will set some battle mechanics in the middle of it.
