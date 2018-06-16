@@ -13,6 +13,6 @@ Lancer Spree is the first game beign created by Paperstart Games. In order to be
 
 The maximum time window that will be set for it to be done is one year. The important point is that the quicker the core of the game is done, more and more details will be inserted or changed.
 
-We will use C# and MonoGame Framework, since it is open source and allows the portability of the games created into the majority of the platforms (PC, XBox, PlayStation, Nintendo).
+We will use C# and Unity 3D, since it has a huge community and allows the portability of the games created into the majority of the platforms (PC, XBox, PlayStation, Nintendo).
 
 That is it for now! We will be updating the website and trying our best to make this dream come true!

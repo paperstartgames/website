@@ -5,9 +5,57 @@
     <description>Paperstart Games Website created by Rodrigo Long Chen Kashiwakura</description>
     <link>https://www.paperstartgames.com/</link>
     <atom:link href="https://www.paperstartgames.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Sep 2017 17:09:27 -0300</pubDate>
-    <lastBuildDate>Sun, 17 Sep 2017 17:09:27 -0300</lastBuildDate>
+    <pubDate>Sat, 16 Jun 2018 01:03:13 -0300</pubDate>
+    <lastBuildDate>Sat, 16 Jun 2018 01:03:13 -0300</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
+    
+      <item>
+        <title>Install Unity3D in Ubuntu 18.04</title>
+        <description>&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;RESOURCES&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Unity3D on Linux: &lt;a href=&quot;https://forum.unity.com/threads/unity-on-linux-release-notes-and-known-issues.350256/page-2&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;In order to install Unity3D into Ubuntu 18.04, you need to download the latest version available &lt;a href=&quot;https://forum.unity.com/threads/unity-on-linux-release-notes-and-known-issues.350256/page-2#post-3525218&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;. After downloading it, you should turn it executable and begin the installation via the following commands:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install libgtk2.0-0 libsoup2.4-1 libarchive13 libpng16-16 libgconf-2-4
+chmod +x UnitySetup-YYYY.X.ZZZ
+./UnitySetup-YYYY.X.ZZZ
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After finishing it, you will also need to install an IDE to write C# code. I recommend MonoDevelop, which can be installed by the following commands:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install apt-transport-https dirmngr
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;deb https://download.mono-project.com/repo/ubuntu stable-bionic main&quot;&lt;/span&gt; | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+sudo apt update
+sudo apt install mono-complete monodevelop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Finally, in Unity3D, go to &lt;strong&gt;Edit &amp;gt; Preferences&lt;/strong&gt; and access &lt;strong&gt;External Tools&lt;/strong&gt;. There, in &lt;strong&gt;External Script Editor&lt;/strong&gt; drop down list, click on &lt;strong&gt;Browse…&lt;/strong&gt;, where you will locate the MonoDevelop Editor in &lt;strong&gt;/usr/bin/monodevelop&lt;/strong&gt;, or if it isn´t there, find it via &lt;strong&gt;whereis monodevelop&lt;/strong&gt; command. And that´s all you need to start game programming in Ubuntu 18.04.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;warnings&quot;&gt;WARNINGS&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Problem with Unity3D AudioClips&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If Unity3D is not recognizing the .wav, .mp3, … as AudioClips, you should install &lt;strong&gt;lib32stdc++6&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 14 Jun 2018 23:00:00 -0300</pubDate>
+        <link>https://www.paperstartgames.com/install-unity3d-in-ubuntu-18_04/</link>
+        <guid isPermaLink="true">https://www.paperstartgames.com/install-unity3d-in-ubuntu-18_04/</guid>
+        
+        <category>game</category>
+        
+        <category>programming</category>
+        
+      </item>
     
       <item>
         <title>Creating our Website with Jekyll</title>
@@ -364,7 +412,7 @@ git push origin master
 
 &lt;p&gt;The maximum time window that will be set for it to be done is one year. The important point is that the quicker the core of the game is done, more and more details will be inserted or changed.&lt;/p&gt;
 
-&lt;p&gt;We will use C# and MonoGame Framework, since it is open source and allows the portability of the games created into the majority of the platforms (PC, XBox, PlayStation, Nintendo).&lt;/p&gt;
+&lt;p&gt;We will use C# and Unity 3D, since it has a huge community and allows the portability of the games created into the majority of the platforms (PC, XBox, PlayStation, Nintendo).&lt;/p&gt;
 
 &lt;p&gt;That is it for now! We will be updating the website and trying our best to make this dream come true!&lt;/p&gt;
 </description>
