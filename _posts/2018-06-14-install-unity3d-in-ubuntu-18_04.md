@@ -20,11 +20,20 @@ In order to install Unity3D into Ubuntu 18.04, you need to download the latest v
 
 ```bash
 sudo apt install libgtk2.0-0 libsoup2.4-1 libarchive13 libpng16-16 libgconf-2-4
+cd ~/Downloads
 chmod +x UnitySetup-YYYY.X.ZZZ
 ./UnitySetup-YYYY.X.ZZZ
 ```
 
-After finishing it, you will also need to install an IDE to write C# code. I recommend MonoDevelop, which can be installed by the following commands:
+After finishing it, it´s an good idea to move Unity3D into the **opt** folder and also create a symbolic link connected to it:
+
+```bash
+cd
+sudo mv UnitySetup-YYYY.X.ZZZ /opt/Unity3D
+sudo ln -s /opt/Unity3D/Editor/Unity /usr/bin/unity3d
+```
+
+Now, with the symbolic link created, you are now able to execute Unity3d via **unity3d** command. Also, you will need to install an IDE to write C# code. I recommend MonoDevelop, which can be installed via:
 
 ```bash
 sudo apt install apt-transport-https dirmngr
