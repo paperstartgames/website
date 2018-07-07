@@ -5,8 +5,8 @@
     <description>Paperstart Games Website created by Rodrigo Long Chen Kashiwakura</description>
     <link>https://www.paperstartgames.com/</link>
     <atom:link href="https://www.paperstartgames.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 Jul 2018 16:00:45 -0300</pubDate>
-    <lastBuildDate>Sat, 07 Jul 2018 16:00:45 -0300</lastBuildDate>
+    <pubDate>Sat, 07 Jul 2018 16:02:02 -0300</pubDate>
+    <lastBuildDate>Sat, 07 Jul 2018 16:02:02 -0300</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -27,7 +27,7 @@ chmod +x UnitySetup-YYYY.X.ZZZ
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;After finishing it, it´s an good idea to move Unity3D into the &lt;strong&gt;opt&lt;/strong&gt; folder and also create a symbolic link connected to it:&lt;/p&gt;
+&lt;p&gt;After the install, it´s a good idea to move Unity3D into the &lt;strong&gt;opt&lt;/strong&gt; folder and also create a symbolic link connected to it:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd
 &lt;/span&gt;sudo mv UnitySetup-YYYY.X.ZZZ /opt/Unity3D
@@ -35,7 +35,7 @@ sudo ln -s /opt/Unity3D/Editor/Unity /usr/bin/unity3d
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Now, with the symbolic link created, you are now able to execute Unity3d via &lt;strong&gt;unity3d&lt;/strong&gt; command. Also, you will need to install an IDE to write C# code. I recommend MonoDevelop, which can be installed via:&lt;/p&gt;
+&lt;p&gt;Now, with the symbolic link created, you are able to execute Unity3d via &lt;strong&gt;unity3d&lt;/strong&gt; command. Also, you will need to install an IDE to write C# code. I recommend MonoDevelop, which can be installed via:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install apt-transport-https dirmngr
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
@@ -55,6 +55,9 @@ sudo apt install mono-complete monodevelop
 
 &lt;p&gt;If Unity3D is not recognizing the .wav, .mp3, … as AudioClips, you should install &lt;strong&gt;lib32stdc++6&lt;/strong&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;2. Failed to load module “canberra-gtk-module”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If every time you start Unity3D, this message appears in the console, you should install &lt;strong&gt;libcanberra-gtk-module&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 14 Jun 2018 23:00:00 -0300</pubDate>
         <link>https://www.paperstartgames.com/install-unity3d-in-ubuntu-18_04/</link>
