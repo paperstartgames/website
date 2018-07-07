@@ -149,7 +149,6 @@ layout: compress
     <meta name="description" content="Paperstart Games | {{ page.title }}">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Paperstart Games | {{ page.title }}</title>
-    <link rel="icon" href="{% asset_path fav.png %}" type="image/x-icon">
 
     <!-- Bootstrap -->
     {% css bootstrap.min %}
